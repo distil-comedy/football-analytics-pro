@@ -1,0 +1,14 @@
+path: D:/football_analytics_pro/data/dataset
+train: images
+val: images
+
+# Strict index mapping from your CVAT Constructor
+names:
+  0: player
+  1: goalkeeper
+  2: ball
+  3: goal_post
+  4: corner_flag
+  5: penalty_spot
+  6: referee
+  7: center_circle
