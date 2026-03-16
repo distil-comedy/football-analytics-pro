@@ -36,7 +36,7 @@ def main():
     st.markdown('<h1 class="main-title">Real Time Football Match Analytics - PRO Edition</h1>', unsafe_allow_html=True)
     st.divider()
 
-    model = YOLO("runs/detect/football_custom_training/weights/best.pt")
+    model = YOLO("models/best.pt")
     uploaded_file = st.file_uploader("📂 Upload HD Footage (Up to 1GB)", type=['mp4', 'mov'])
 
     if uploaded_file:

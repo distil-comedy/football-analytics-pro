@@ -5,7 +5,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B.svg)
 ![GTX 1080 Ti](https://img.shields.io/badge/GPU-GTX%201080%20Ti-76B900.svg)
 
-An elite Computer Vision pipeline designed for tactical football analysis. This system processes high-definition match footage to track players, classify teams (Al-Nassr vs. Al-Khaleej), and generate automated tactical intelligence.
+An elite Computer Vision pipeline designed for tactical football analysis. This system processes high-definition match footage to track players, classify teams, and generate automated tactical intelligence.
 
 ## 🚀 Key Features
 
