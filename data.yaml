@@ -1,14 +1,44 @@
 path: D:/football_analytics_pro/data/dataset
 train: images
 val: images
-
-# Strict index mapping from your CVAT Constructor
 names:
-  0: player
-  1: goalkeeper
-  2: ball
-  3: goal_post
-  4: corner_flag
-  5: penalty_spot
-  6: referee
-  7: center_circle
+  0: ball_air_fast
+  1: ball_air_medium
+  2: ball_air_slow
+  3: ball_air_stationary
+  4: ball_ground_fast
+  5: ball_ground_medium
+  6: ball_ground_slow
+  7: ball_ground_stationary
+  8: ball_out_of_play_fast
+  9: ball_out_of_play_stationary
+  10: center_circle
+  11: corner_flag
+  12: goal_post
+  13: goalkeeper_team_a_catching
+  14: goalkeeper_team_a_diving
+  15: goalkeeper_team_a_positioning
+  16: goalkeeper_team_a_standing
+  17: goalkeeper_team_a_throwing
+  18: goalkeeper_team_b_catching
+  19: goalkeeper_team_b_diving
+  20: goalkeeper_team_b_positioning
+  21: goalkeeper_team_b_standing
+  22: penalty_spot
+  23: player_team_a_dribbling
+  24: player_team_a_passing
+  25: player_team_a_running
+  26: player_team_a_shooting
+  27: player_team_a_standing
+  28: player_team_a_tackling
+  29: player_team_b_dribbling
+  30: player_team_b_passing
+  31: player_team_b_running
+  32: player_team_b_shooting
+  33: player_team_b_standing
+  34: player_team_b_tackling
+  35: referee_communicating
+  36: referee_running
+  37: referee_signaling
+  38: referee_standing
+  39: referee_whistling

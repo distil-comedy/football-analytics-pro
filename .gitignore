@@ -4,4 +4,7 @@ runs/
 *.mp4
 *.mov
 .vscode/
-__pycache__/
+__pycache__/ocr_models/
+pip_cache/
+ocr_models/
+Output figure/

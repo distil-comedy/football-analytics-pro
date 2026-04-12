@@ -1,27 +1,23 @@
 from ultralytics import YOLO
-import os
 
-def train_custom_model():
-    # 1. Load the base YOLOv8 nano model
-    # We start with nano (yolov8n) because it's fast and perfect for a B.Tech project
-    model = YOLO('yolov8n.pt')
-
-    # 2. Start the training
-    # data: points to your data.yaml which has our 8 classes
-    # epochs: 50 iterations through your data
-    # imgsz: 640 is the standard training resolution
-    # device: 0 if you have a GPU (CUDA), otherwise 'cpu'
-    results = model.train(
-        data='data.yaml', 
-        epochs=50, 
-        imgsz=640, 
-        batch=16,
-        device=0,  # <--- THIS IS THE MAGIC KEY
-        name='football_custom_training'
-    )
+def main():
+    # 1. Load the pre-trained YOLOv8 Nano model (Best for real-time video FPS)
+    model = YOLO("yolov8n.pt")
     
-    print("✅ Training complete!")
-    print("Your custom 'best.pt' is located in: runs/detect/football_custom_training/weights/best.pt")
+    # 2. Start the GPU Training Process
+    print("🚀 Igniting GTX 1080 Ti for End-to-End Model Training...")
+    results = model.train(
+        data=r"D:\football_analytics_pro\data.yaml",
+        epochs=100,         # 100 epochs is a solid baseline. YOLO auto-stops if it peaks early.
+        imgsz=640,          # HD resolution scaling
+        batch=16,           # Optimal batch size for an 11GB GTX 1080 Ti
+        device=0,           # 0 targets your dedicated NVIDIA GPU
+        project="runs/detect", 
+        name="pro_football_model",
+        cache=True          # Speeds up training by loading images into RAM
+    )
+    print("✅ Training Complete! Your new brain is ready.")
 
-if __name__ == "__main__":
-    train_custom_model()
+if __name__ == '__main__':
+    # Required for Windows multiprocessing
+    main()
