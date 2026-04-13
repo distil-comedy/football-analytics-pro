@@ -39,10 +39,10 @@ $$\text{Possession Share (\%)} = \left( \frac{\text{Frames with Team Control}}{\
 ## 📸 System Output & Dashboard
 
 ### Live Inference Engine & Dashboard
-![Live Streamlit Dashboard UI](assets/dashboard.jpg)
+![Live Streamlit Dashboard UI](assets/dashboard.png)
 *Real-time premium UI displaying live metrics, processing speed, and active ball possession.*
 
-![Full Pitch Tracking](assets/tracking.jpg)
+![Full Pitch Tracking](assets/tracking.png)
 *Detailed tracking IDs, physical states, actions, and sleek native-style micro-text overlays.*
 
 ### Post-Match Tactical Intelligence
@@ -50,7 +50,7 @@ $$\text{Possession Share (\%)} = \left( \frac{\text{Frames with Team Control}}{\
 *2D Density contour mapping of player positions alongside calculated ball possession percentages.*
 
 ### Raw Model Detection Output
-![Raw YOLO Detection](assets/raw_yolo.jpg)
+![Raw YOLO Detection](assets/raw_yolo.png)
 *Custom trained YOLOv8 model detecting players, goalkeepers, referees, goal posts, and corner flags.*
 
 ---
